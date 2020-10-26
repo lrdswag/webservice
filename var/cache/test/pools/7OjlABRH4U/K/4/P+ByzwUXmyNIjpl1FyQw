@@ -1,0 +1,3 @@
+<?php //route_name_47a3fde49c011b438d9280b787aa4cab
+
+return [PHP_INT_MAX, 'api_shifts_get_item'];

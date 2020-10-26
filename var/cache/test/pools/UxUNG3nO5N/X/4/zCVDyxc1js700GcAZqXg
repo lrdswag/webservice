@@ -1,0 +1,113 @@
+<?php //subresource_operations_06cf21d6b3a726a1deadff4ee9d763bd
+
+return [PHP_INT_MAX, [
+    'api_users_shifts_get_subresource' => [
+        'property' => 'shifts',
+        'collection' => true,
+        'resource_class' => 'App\\Entity\\ScheduledShift',
+        'shortNames' => [
+            'shifts',
+            'user',
+        ],
+        'identifiers' => [
+            [
+                'id',
+                'App\\Entity\\User',
+                true,
+            ],
+        ],
+        'operation_name' => 'shifts_get_subresource',
+        'route_name' => 'api_users_shifts_get_subresource',
+        'path' => '/users/{id}/shifts.{_format}',
+        'defaults' => [],
+        'requirements' => [],
+        'options' => [],
+        'host' => '',
+        'schemes' => [],
+        'condition' => '',
+        'controller' => null,
+    ],
+    'api_users_shifts_comments_get_subresource' => [
+        'property' => 'comments',
+        'collection' => true,
+        'resource_class' => 'App\\Entity\\ShiftComments',
+        'shortNames' => [
+            'comments',
+            'shifts',
+        ],
+        'identifiers' => [
+            [
+                'id',
+                'App\\Entity\\User',
+                true,
+            ],
+            [
+                'shifts',
+                'App\\Entity\\ScheduledShift',
+                true,
+            ],
+        ],
+        'operation_name' => 'shifts_comments_get_subresource',
+        'route_name' => 'api_users_shifts_comments_get_subresource',
+        'path' => '/users/{id}/shifts/{shifts}/comments.{_format}',
+        'defaults' => [],
+        'requirements' => [],
+        'options' => [],
+        'host' => '',
+        'schemes' => [],
+        'condition' => '',
+        'controller' => null,
+    ],
+    'api_users_comments_get_subresource' => [
+        'property' => 'comments',
+        'collection' => true,
+        'resource_class' => 'App\\Entity\\ShiftComments',
+        'shortNames' => [
+            'comments',
+            'user',
+        ],
+        'identifiers' => [
+            [
+                'id',
+                'App\\Entity\\User',
+                true,
+            ],
+        ],
+        'operation_name' => 'comments_get_subresource',
+        'route_name' => 'api_users_comments_get_subresource',
+        'path' => '/users/{id}/comments.{_format}',
+        'defaults' => [],
+        'requirements' => [],
+        'options' => [],
+        'host' => '',
+        'schemes' => [],
+        'condition' => '',
+        'controller' => null,
+    ],
+    'api_users_received_comments_get_subresource' => [
+        'property' => 'receivedComments',
+        'collection' => true,
+        'resource_class' => 'App\\Entity\\ShiftComments',
+        'shortNames' => [
+            'comments',
+            'user',
+        ],
+        'identifiers' => [
+            [
+                'id',
+                'App\\Entity\\User',
+                true,
+            ],
+        ],
+        'operation_name' => 'received_comments_get_subresource',
+        'route_name' => 'api_users_received_comments_get_subresource',
+        'path' => '/users/{id}/received_comments.{_format}',
+        'defaults' => [],
+        'requirements' => [],
+        'options' => [],
+        'host' => '',
+        'schemes' => [],
+        'condition' => '',
+        'controller' => null,
+    ],
+]];

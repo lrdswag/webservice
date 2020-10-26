@@ -1,0 +1,30 @@
+<?php //subresource_operations_d5bd9ccbc20a3a0acac6f529d3918f52
+
+return [PHP_INT_MAX, [
+    'api_shifts_comments_get_subresource' => [
+        'property' => 'comments',
+        'collection' => true,
+        'resource_class' => 'App\\Entity\\ShiftComments',
+        'shortNames' => [
+            'comments',
+            'shifts',
+        ],
+        'identifiers' => [
+            [
+                'id',
+                'App\\Entity\\ScheduledShift',
+                true,
+            ],
+        ],
+        'operation_name' => 'comments_get_subresource',
+        'route_name' => 'api_shifts_comments_get_subresource',
+        'path' => '/shifts/{id}/comments.{_format}',
+        'defaults' => [],
+        'requirements' => [],
+        'options' => [],
+        'host' => '',
+        'schemes' => [],
+        'condition' => '',
+        'controller' => null,
+    ],
+]];

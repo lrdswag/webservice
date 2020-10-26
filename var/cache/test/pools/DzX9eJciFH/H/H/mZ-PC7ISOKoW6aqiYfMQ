@@ -1,0 +1,106 @@
+<?php //%255BApp%255CApiPlatform%255CTest%255CScheduledShift%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiFilter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiFilter')),
+        clone $p['ApiPlatform\\Core\\Annotation\\ApiFilter'],
+        clone $p['ApiPlatform\\Core\\Annotation\\ApiFilter'],
+        clone $p['ApiPlatform\\Core\\Annotation\\ApiFilter'],
+        clone ($p['TheCodingMachine\\GraphQLite\\Annotations\\Type'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('TheCodingMachine\\GraphQLite\\Annotations\\Type')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Index'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Index')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'shortName' => [
+                'shifts',
+            ],
+            'attributes' => [
+                [
+                    'normalization_context' => [
+                        'groups' => [
+                            'shift:read',
+                        ],
+                        'swagger_definition_name' => 'Read',
+                    ],
+                    'denormalization_context' => [
+                        'groups' => [
+                            'shift:write',
+                        ],
+                        'swagger_definition_name' => 'Write',
+                    ],
+                ],
+            ],
+            'filterClass' => [
+                1 => 'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\DateFilter',
+                'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\BooleanFilter',
+                'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\SearchFilter',
+                'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\OrderFilter',
+            ],
+            'properties' => [
+                1 => [
+                    'start',
+                    'end',
+                ],
+                [
+                    'isApproved',
+                ],
+                [
+                    'id' => 'exact',
+                    'ShiftStatus' => 'exact',
+                ],
+                [
+                    'start',
+                    'end',
+                ],
+            ],
+            'arguments' => [
+                4 => [
+                    'orderParameterName' => 'order',
+                ],
+            ],
+            'name' => [
+                6 => 'scheduled_shift',
+                'IDX_E776626E7CB2CD68',
+            ],
+            'indexes' => [
+                6 => [
+                    $o[7],
+                ],
+            ],
+            'columns' => [
+                7 => [
+                    'on_duty_id',
+                ],
+            ],
+            'repositoryClass' => [
+                8 => 'App\\Repository\\ScheduledShiftRepository',
+            ],
+        ],
+        'TheCodingMachine\\GraphQLite\\Annotations\\Type' => [
+            'name' => [
+                5 => 'Shifts',
+            ],
+            'default' => [
+                5 => true,
+            ],
+            'selfType' => [
+                5 => true,
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+        $o[4],
+        $o[5],
+        $o[6],
+        $o[8],
+    ],
+    []
+); }];

@@ -1,0 +1,13 @@
+<?php //%255BApp%255CApiPlatform%255CTest%255CUser%2523getLastName%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['TheCodingMachine\\GraphQLite\\Annotations\\Field'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('TheCodingMachine\\GraphQLite\\Annotations\\Field')),
+    ],
+    null,
+    [],
+    [
+        $o[0],
+    ],
+    []
+); }];

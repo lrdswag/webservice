@@ -1,0 +1,101 @@
+<?php //%255BApp%255CApiPlatform%255CTest%255CUser%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiFilter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiFilter')),
+        clone ($p['TheCodingMachine\\GraphQLite\\Annotations\\Type'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('TheCodingMachine\\GraphQLite\\Annotations\\Type')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\UniqueConstraint'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\UniqueConstraint')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'shortName' => [
+                'user',
+            ],
+            'attributes' => [
+                [
+                    'normalization_context' => [
+                        'groups' => [
+                            'user:read',
+                        ],
+                        'swagger_definition_name' => 'Read',
+                    ],
+                    'denormalization_context' => [
+                        'groups' => [
+                            'user:write',
+                        ],
+                        'swagger_definition_name' => 'Write',
+                    ],
+                ],
+            ],
+            'filterClass' => [
+                1 => 'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\OrderFilter',
+            ],
+            'properties' => [
+                1 => [
+                    'lastName',
+                    'firstName',
+                ],
+            ],
+            'arguments' => [
+                1 => [
+                    'orderParameterName' => 'order',
+                ],
+            ],
+            'name' => [
+                3 => 'user',
+                'UNIQ_8D93D649E7927C74',
+            ],
+            'uniqueConstraints' => [
+                3 => [
+                    $o[4],
+                ],
+            ],
+            'columns' => [
+                4 => [
+                    'email',
+                ],
+            ],
+            'repositoryClass' => [
+                5 => 'App\\Repository\\UserRepository',
+            ],
+            'message' => [
+                6 => 'There is already an account with this email',
+            ],
+            'fields' => [
+                6 => [
+                    'email',
+                ],
+            ],
+            'groups' => [
+                6 => [
+                    'Default',
+                ],
+            ],
+        ],
+        'TheCodingMachine\\GraphQLite\\Annotations\\Type' => [
+            'name' => [
+                2 => 'Users',
+            ],
+            'default' => [
+                2 => true,
+            ],
+            'selfType' => [
+                2 => true,
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+        $o[5],
+        $o[6],
+    ],
+    []
+); }];
